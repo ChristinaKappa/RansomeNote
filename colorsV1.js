@@ -9,23 +9,22 @@ var userInput = document.getElementById("input");
 
 function getColor()
 {
-    // gets random colours for the background shapes and generates lighter colours ) //
+    // gets random colours for the background shapes  ) //
      
     
-    var r = Math.floor((Math.random()*128)+128);
-    var g = Math.floor((Math.random()*128)+128);
-    var b = Math.floor((Math.random()*128)+128);
+    var r = Math.floor(Math.random()*128);
+    var g = Math.floor(Math.random()*128);
+    var b = Math.floor(Math.random()*128);
      return 'rgb(' + r + ',' + g + ',' + b + ')';
 }
 
 function getFontColor()
 {
-      // gets colours for the fonts and generates darker colours //
+      // gets colours for the fonts //
     
-  var r = Math.floor((Math.random()*128)+1);
-    var g = Math.floor((Math.random()*128)+1);
-    var b = Math.floor((Math.random()*128)+1);
+  var r = Math.floor(Math.random()*150);
+    var g = Math.floor(Math.random()*150);
+    var b = Math.floor(Math.random()*150);
      return 'rgb(' + r + ',' + g + ',' + b + ')';
 
 }
-
