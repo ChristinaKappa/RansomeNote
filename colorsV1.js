@@ -3,7 +3,6 @@
 
 var canvas = document.getElementById("drawCanvas");
 var draw = canvas.getContext("2d");
-var button =  document.getElementById("button");
 var userInput = document.getElementById("input");
 
 
