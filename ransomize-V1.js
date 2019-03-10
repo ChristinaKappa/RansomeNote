@@ -73,7 +73,7 @@ function ransomize()
 	var inputString = userInput.value;
 	//assign the value of the starting distance x and Y
 	var startX = 20;
-  var startY = 70;
+  	var startY = 70;
 
 	// Genarate both squares and text for each letter of the user input
 	for (var i = 0; i < inputString.length; i++)
@@ -85,7 +85,7 @@ function ransomize()
 		if (inputString[i] != " ")
 		{
 			draw.fillStyle = getColor();
-			draw.fillRect(ransomX - letterSize / 4, ransomY - 3* letterSize / 4, letterSize, letterSize);
+			draw.fillRect(startX - letterSize / 4, startY - 3* letterSize / 4, letterSize, letterSize);
 		}
 		
 		// Draw the text - Christina Kappalumakkel   
