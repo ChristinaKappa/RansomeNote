@@ -74,11 +74,10 @@ function ransomize()
 	//assign the value of the starting distance x and Y
 	var startX = 20;
   	var startY = 70;
-
 	// Genarate both squares and text for each letter of the user input
 	for (var i = 0; i < inputString.length; i++)
 	{
-		
+		// Asimina Kazakou
 		// Apply the min and max size of the fonts
 		var letterSize = getSize(20, 61);
 		// To remove the square and replace it with a blank space when the user types a sentence with a space in it
