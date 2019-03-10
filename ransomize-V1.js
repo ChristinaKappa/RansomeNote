@@ -78,10 +78,15 @@ function ransomize()
 	// Genarate both squares and text for each letter of the user input
 	for (var i = 0; i < inputString.length; i++)
 	{
-		// Draw squares
+		
+		// Apply the min and max size of the fonts
 		var letterSize = getSize(20, 61);
-		draw.fillStyle = getColor();
-		draw.fillRect(startX - letterSize / 4, startY - 3* letterSize / 4, letterSize, letterSize);
+		// To remove the square and replace it with a blank space when the user types a sentence with a space in it
+		if (inputString[i] != " ")
+		{
+			draw.fillStyle = getColor();
+			draw.fillRect(ransomX - letterSize / 4, ransomY - 3* letterSize / 4, letterSize, letterSize);
+		}
 		
 		// Draw the text - Christina Kappalumakkel   
     		draw.fillStyle = getFontColor();  // colour the font with the randomized colour function created before getFontColor()
