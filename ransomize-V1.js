@@ -82,13 +82,5 @@ function ransomize()
 		var letterSize = getSize(20, 61);
 		draw.fillStyle = getColor();
 		draw.fillRect(startX - letterSize / 4, startY - 3* letterSize / 4, letterSize, letterSize);
-
-		// Draw text
-    draw.fillStyle = getFontColor();
-    draw.font = letterSize +  "px " + getFont();
-    draw.fillText(inputString[i], startX, startY);
-
-		// The distance that each letter has
-		startX += letterSize + 10;
 	}
 }
