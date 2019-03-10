@@ -82,5 +82,13 @@ function ransomize()
 		var letterSize = getSize(20, 61);
 		draw.fillStyle = getColor();
 		draw.fillRect(startX - letterSize / 4, startY - 3* letterSize / 4, letterSize, letterSize);
+		
+		// Draw the text - Christina Kappalumakkel   
+    		draw.fillStyle = getFontColor();  // colour the font with the randomized colour function created before getFontColor()
+    		draw.font = letterSize +  "px " + getFont(); //draw the font with the randomized 'letterSize' range in px and get the randomized font 'getFont' function
+    		draw.fillText(inputString[i], startX, startY);  //draw all the letters that was written into the Input section in the startX and Y position. 
+    
+		// This creates space between each letter which is added from the startX position
+		startX += letterSize + 10;
 	}
 }
