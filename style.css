@@ -44,6 +44,23 @@ canvas {
     border: 2px solid white;
 }
 
+.cover {
+    background-color: hotpink;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
 #button {
      margin: 0 auto;
     margin-top: 10px;
