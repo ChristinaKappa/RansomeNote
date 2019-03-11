@@ -69,6 +69,7 @@ function getFont()
 // Prototype one by Asimina Kazakou
 function ransomize()
 {
+    draw.clearRect(0,0, canvas.width, canvas.height);
 	//assign the user input value
 	var inputString = userInput.value;
 	//assign the value of the starting distance x and Y
@@ -94,5 +95,13 @@ function ransomize()
     
 		// This creates space between each letter which is added from the startX position
 		startX += letterSize + 10;
+        
+        
+        // check if the text is out of the canvas (Silvia)
+        if(startX + letterSize>= canvas.width ){
+            startX=20;
+            startY+=70;
+            
+        }
 	}
 }
